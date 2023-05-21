@@ -7,13 +7,24 @@
 
 import UIKit
 
-class ViewController: UIViewController {
 
+
+class ViewController: UIViewController {
+    @IBOutlet weak var ButtonCounter: UIButton!
+    
+    private var counter: Int = 0
+    
+    @IBOutlet weak var counterViewLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
     }
 
-
+    @IBAction func ButtonDidTap(_ sender: Any) {
+    counter += 1
+        counterViewLabel.text = "ЗНАЧЕНИЕ СЧЁТЧИКА: \(counter)"
+        
+    }
+    
 }
 
