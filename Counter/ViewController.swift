@@ -10,7 +10,7 @@ import UIKit
 
 
 class ViewController: UIViewController {
-    @IBOutlet weak var ButtonCounter: UIButton!
+    @IBOutlet weak var buttonCounter: UIButton!
     
     private var counter: Int = 0
     
@@ -19,7 +19,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
     }
-
     @IBAction func ButtonDidTap(_ sender: Any) {
     counter += 1
         counterViewLabel.text = "ЗНАЧЕНИЕ СЧЁТЧИКА: \(counter)"
